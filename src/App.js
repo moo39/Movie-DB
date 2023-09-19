@@ -10,7 +10,6 @@ function App() {
   const [movies, setAllMovies] = useState([]);
   const [pageCount, setPageCount] = useState(0);
 
-
   //get all movies
   const fetchData = async () => {
     const res = await axios.get('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=ar&api_key=394827b4d1c833602ba4a13ace1b6a89')
